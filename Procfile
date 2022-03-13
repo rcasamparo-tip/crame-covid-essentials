@@ -1,0 +1,1 @@
+web: gunicorn crame-covid-essentials.wsgi --log-file -
