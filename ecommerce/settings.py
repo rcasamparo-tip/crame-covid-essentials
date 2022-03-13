@@ -31,6 +31,8 @@ ALLOWED_HOSTS = ['crame-covid-essentials.herokuapp.com', '127.0.0.1']
 # Application definition
 
 INSTALLED_APPS = [
+    #additional for whitenoise
+    'whitenoise.runserver_nostatic',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -124,7 +126,7 @@ USE_TZ = True
 
 #webhosting deployment
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
