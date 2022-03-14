@@ -134,8 +134,7 @@ STATICFILES_DIRS = [
 ]
 
 
-MEDIA_URL = 'static/images/'
+MEDIA_URL = 'static/images/', '/checkout/static/images/', '/cart/static/images/'
 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images/')
-#MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images')
-#django_heroku.settings(locals())
+MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images')
+
