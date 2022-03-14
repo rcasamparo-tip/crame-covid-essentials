@@ -135,8 +135,6 @@ STATICFILES_DIRS = [
 
 
 MEDIA_URL = 'static/images/'
-MEDIA_URL = 'checkout/static/images/'
-MEDIA_URL = 'cart/static/images/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images')
 
